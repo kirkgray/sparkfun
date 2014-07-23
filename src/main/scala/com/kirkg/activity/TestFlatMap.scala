@@ -1,4 +1,4 @@
-package com.pearson.seer.activity
+package com.kirkg.activity
 
 object TestFlatMap {
 

@@ -1,16 +1,16 @@
-package com.pearson.sparksummit
+package com.kirkg.activity
 
 import org.apache.spark.streaming._
 import org.apache.spark.streaming.StreamingContext._
 
-object SummitEx {
+object SeerActivity {
 
   def main( args: Array[String]) { 
     
 	  val ssc = new StreamingContext("local", "seer-activity", Seconds(10))
-	  
-	  val messages = null//KafkaUtils.createStream( ssc, "localhost:2181", "test", Map("test" -> 1) ).map(_._2)
 	  /*
+	  val messages = KafkaUtils.createStream( ssc, "localhost:2181", "test", Map("test" -> 1) ).map(_._2)
+	  
 	  val vStream = messages.map( m => { m.toString() } )
 	  
 	  //split the words and mash them into the words list such that each line and the splits are all just words

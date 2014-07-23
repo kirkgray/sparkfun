@@ -1,4 +1,4 @@
-package com.pearson.seer.activity.emr
+package com.kirkg.activity.emr
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
